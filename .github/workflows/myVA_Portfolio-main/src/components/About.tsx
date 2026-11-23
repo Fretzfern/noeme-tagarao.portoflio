@@ -1,4 +1,3 @@
-
 const About = () => {
   return (
     <section id="about" className="py-20 px-6">
@@ -9,27 +8,18 @@ const About = () => {
           </h2>
           <div className="w-24 h-1 bg-neon-cyan mx-auto rounded-full"></div>
         </div>
-        
+
         <div className="glass-card p-8 md:p-12 neon-glow">
-          <div className="text-center">
-            <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">
-              I'm a dedicated second-year IT student with hands-on experience in customer support 
-             , specializing in healthcare customer service. My unique blend of technical 
-              knowledge and exceptional communication skills positions me perfectly for the virtual 
-              assistant industry.
-            </p>
-            
-            <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">
-              Currently transitioning into the Virtual Assistant field, I bring a strong foundation 
-              in both technology and customer service. I actively work on personal coding projects 
-              and continuously expand my skill set to provide comprehensive support to clients.
-            </p>
-            
-            <p className="text-lg md:text-xl text-neon-cyan font-medium">
-              Ready to leverage my tech expertise and communication excellence to help streamline 
-              your business operations and boost productivity.
-            </p>
-          </div>
+          <p className="text-lg md:text-xl text-gray-300 leading-relaxed text-center">
+            With 4 years of experience providing administrative support, I excel in document
+            organization, record management, and encoding daily sales reports with a high level
+            of accuracy. Skilled in Microsoft Excel, Microsoft Word, and Google Workspace, I have
+            supported daily office operations by maintaining filing systems, coordinating permit
+            processing, and managing bank deposits. I bring strong organizational abilities,
+            professionalism, and a commitment to delivering reliable support that improves
+            operational efficiency. A dependable, quick learner with strong organizational skills
+            committed to delivering quality results.
+          </p>
         </div>
       </div>
     </section>

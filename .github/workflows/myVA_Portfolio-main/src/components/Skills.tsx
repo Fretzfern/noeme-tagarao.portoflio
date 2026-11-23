@@ -1,27 +1,29 @@
-
-import { Code, Users, Database, Globe, Calendar, FileText, Mail, Search } from "lucide-react";
+import {
+  FileText, FolderOpen, Database, Users, Globe, Mail, Calendar,
+  Video, Palette, Bot, ListChecks, MessageSquare, Film, Share2, CheckCircle
+} from "lucide-react";
 
 const Skills = () => {
-  const techSkills = [
-    { name: "HTML & CSS", icon: Globe },
-    { name: "JavaScript", icon: Code },
-    { name: "PHP", icon: Code },
-    { name: "MySQL", icon: Database },
-    { name: "Python", icon: Code },
-    { name: "C#", icon: Code },
-    { name: "Git & GitHub", icon: Code },
-    { name: "VS Code", icon: Code }
+  const adminSkills = [
+    { name: "Administrative Support", icon: FileText },
+    { name: "Document Organization", icon: FolderOpen },
+    { name: "Record Management", icon: Database },
+    { name: "Sales Report Encoding", icon: Database },
+    { name: "Microsoft Office", icon: FileText },
+    { name: "Google Workspace", icon: Globe },
+    { name: "Customer Service", icon: Users },
+    { name: "Attention to Detail", icon: CheckCircle }
   ];
 
-  const vaSkills = [
-    { name: "Google Workspace", icon: Globe },
-    { name: "Microsoft Office", icon: FileText },
-    { name: "Canva Design", icon: Users },
-    { name: "Email Management", icon: Mail },
-    { name: "Calendar Scheduling", icon: Calendar },
-    { name: "Research & Analysis", icon: Search },
-    { name: "Data Entry", icon: Database },
-    { name: "Customer Service", icon: Users }
+  const toolSkills = [
+    { name: "Microsoft Teams", icon: MessageSquare },
+    { name: "Zoom & Google Meet", icon: Video },
+    { name: "Calendly & Calendar", icon: Calendar },
+    { name: "Gmail & Email", icon: Mail },
+    { name: "Canva & CapCut", icon: Palette },
+    { name: "Asana & Socialbee", icon: ListChecks },
+    { name: "ChatGPT, Claude & Copilot", icon: Bot },
+    { name: "Zoho, Slack & Opus Clip", icon: Share2 }
   ];
 
   return (
@@ -33,19 +35,17 @@ const Skills = () => {
           </h2>
           <div className="w-24 h-1 bg-neon-cyan mx-auto rounded-full"></div>
         </div>
-        
+
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Tech Skills */}
           <div className="glass-card p-8 neon-glow">
             <h3 className="text-2xl font-bold text-neon-cyan mb-6 text-center">
-              Technical Skills
+              Administrative Skills
             </h3>
             <div className="grid grid-cols-2 gap-4">
-              {techSkills.map((skill, index) => (
-                <div 
+              {adminSkills.map((skill) => (
+                <div
                   key={skill.name}
                   className="flex items-center p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-all duration-300"
-                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <skill.icon className="h-5 w-5 text-neon-cyan mr-3 flex-shrink-0" />
                   <span className="text-gray-300 text-sm font-medium">{skill.name}</span>
@@ -53,18 +53,16 @@ const Skills = () => {
               ))}
             </div>
           </div>
-          
-          {/* VA Skills */}
+
           <div className="glass-card p-8 neon-glow">
             <h3 className="text-2xl font-bold text-neon-cyan mb-6 text-center">
-              Virtual Assistant Skills
+              Tools & Platforms
             </h3>
             <div className="grid grid-cols-2 gap-4">
-              {vaSkills.map((skill, index) => (
-                <div 
+              {toolSkills.map((skill) => (
+                <div
                   key={skill.name}
                   className="flex items-center p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-all duration-300"
-                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <skill.icon className="h-5 w-5 text-neon-cyan mr-3 flex-shrink-0" />
                   <span className="text-gray-300 text-sm font-medium">{skill.name}</span>
